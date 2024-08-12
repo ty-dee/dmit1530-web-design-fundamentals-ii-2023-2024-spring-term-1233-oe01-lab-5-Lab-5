@@ -1,0 +1,56 @@
+:root {
+    --white: #F2F2F2;
+    --accent: #dca530;
+    --hover: #fcc650;
+    --dark: #181413;
+    --pop: #684551;
+}
+
+/* Universal Styles */
+
+body {
+    background-color: var(--white);
+    font: 1rem/1.5 "Lato", Arial, sans-serif;
+}
+
+/* Utility Classes */
+
+.inner-container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.sr-only {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Hurricane', cursive;
+}
+
+
+/* Header */
+
+
+/* Hero Banner */
+
+
+/* Parallax */
+
+
+
+/* Horizontal Scroll */
+
+
+
+/* Footer */
+
+
+
+@media screen and (min-width: 50rem) {
+
+}
