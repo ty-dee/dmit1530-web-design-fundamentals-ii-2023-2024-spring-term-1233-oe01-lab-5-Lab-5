@@ -13,6 +13,10 @@ body {
     font: 1rem/1.5 "Lato", Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Utility Classes */
 
 .inner-container {
@@ -34,23 +38,246 @@ h1 {
 
 
 /* Header */
+header {
+    text-align: center;
+    background-color: var(--pop);
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+}
 
+header > h1 {
+    font-size: 4rem;
+    margin: unset;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav > p {
+    margin-left: 1rem;
+}
+
+button {
+    background-color: unset;
+    border: unset;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.sign-in, .chocolate-inner > a, .card-body > a {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+.description {
+    margin-bottom: 4rem;
+}
+
+button:hover, a:hover, .sign-up:hover {
+    color: var(--dark);
+    cursor: pointer;
+    background-color: var(--hover);
+}
 
 /* Hero Banner */
+.chocolate-inner {
+    color: var(--white);
+    font-size: 1.5rem;
+}
 
+.chocolate-inner > h2 {
+    font-weight: 200;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.chocolate-inner > p {
+    margin: 3rem 1rem;
+}
+
+.chocolate-inner > a, .card-body > a {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.chocolate-inner > a {
+    width: 25%;
+}
+
+span {
+    margin-left: 4rem;
+}
+
+.yellow-inner {
+    margin-left: 50%;
+    margin-right: 2rem;
+}
+
+.yellow-inner > h2, .yellow-inner > p {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.yellow-inner > h2 {
+    font-size: 2rem;
+}
 
 /* Parallax */
+.chocolate {
+    background: url('../img/hero.webp') center / cover no-repeat fixed;
+    padding: 15rem 0;
+}
 
-
+.yellow-page {
+    background: url('../img/splash-mobile.webp') center / cover no-repeat fixed;
+    padding: 15rem 0;
+}
 
 /* Horizontal Scroll */
 
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 5rem;
+    overflow-x: scroll;
+}
 
+.card {
+    border: 15px solid;
+    border-color: var(--white);
+    border-radius: 0.2rem;
+    flex: 0 0 24rem;
+    margin: 2rem 1rem;
+    background-color: var(--white);
+}
+
+.card img {
+    border-radius: 0.2rem 0.2rem 0 0;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body > a {
+    width: 90%;
+    padding: 0.5rem;
+}
+
+.card-body > h2 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.favourites {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.outer-wrapper {
+    background-color: hsl(0, 0%, 90%);
+    padding-bottom: 1rem;
+}
 
 /* Footer */
+footer {
+    background-color: var(--pop);
+    color: var(--white);
+    font-weight: 300;
+}
 
+.newsletter {
+    margin: 1rem;
+}
 
+.outer-container > h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
 
+.outer-container > p {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 70%;
+    padding: 0.25rem;
+}
+
+.sign-up {
+    background-color: var(--accent);
+    padding: 0.5rem;
+}
+
+.ending {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+}
+
+.footer-categories > h3 {
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+li {
+    list-style-type: none;
+    margin: 0.5rem 0;
+}
+
+.footer-categories > li > a {
+    color: var(--white);
+}
+
+.disclaimer > p {
+    text-align: center;
+    padding-bottom: 2rem;
+}
 @media screen and (min-width: 50rem) {
 
+    .nav {
+        margin: 0 5rem;
+    }
+
+    .chocolate-inner {
+        text-align: center;
+    }
+
+    .newsletter {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form {
+        margin: auto;
+        margin-bottom: 1rem;
+        width: 40%;
+    }
+
+    .input {
+        padding-right: 0.5rem;
+    }
+
+    .ending {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
